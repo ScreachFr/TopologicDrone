@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/5" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="customMath">
+			<declarations>
+				<Operator name="Plus10Percent" href="Operator11.xscade"/>
+				<Operator name="Minus10Percent" href="Plus10Percent1.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/47f8/40BE/16B8/5a58b3504e76" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/47f9/40BE/16B8/5a58b350722c" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/47fa/40BE/16B8/5a58b35079c7" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/47fb/40BE/16B8/5a58b350d2e" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

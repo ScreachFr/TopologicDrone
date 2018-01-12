@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="102" defaultConfiguration="22">
+<Project id="1" oid_count="114" defaultConfiguration="22">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -330,12 +330,36 @@
 		</Folder>
 		<Folder id="12" extensions="xscade;scade" name="Model Files">
 			<elements>
-				<Folder id="13" extensions="xscade;scade" name="Separate Files"/>
+				<Folder id="13" extensions="xscade;scade" name="Separate Files">
+					<elements>
+						<FileRef id="108" persistAs="Operator11.xscade">
+							<props>
+								<Prop id="107" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="110" persistAs="Plus10Percent1.xscade">
+							<props>
+								<Prop id="109" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+					</elements>
+				</Folder>
 				<FileRef id="97" persistAs="Operator1.xscade"/>
 				<FileRef id="99" persistAs="Operator2.xscade"/>
 				<FileRef id="100" persistAs="Operator3.xscade"/>
 				<FileRef id="101" persistAs="Operator4.xscade"/>
 				<FileRef id="102" persistAs="Operator5.xscade"/>
+				<FileRef id="103" persistAs="Operator6.xscade"/>
+				<FileRef id="104" persistAs="Operator7.xscade"/>
+				<FileRef id="106" persistAs="Package1.xscade"/>
+				<FileRef id="111" persistAs="Operator8.xscade"/>
+				<FileRef id="112" persistAs="Operator9.xscade"/>
+				<FileRef id="113" persistAs="Operator10.xscade"/>
+				<FileRef id="114" persistAs="Operator111.xscade"/>
 			</elements>
 		</Folder>
 	</roots>

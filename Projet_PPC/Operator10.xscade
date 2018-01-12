@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/5" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="DronePositionRequest">
+			<inputs>
+				<Variable name="X">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4def/40BE/16B8/5a58c0444f6c"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Y">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4df6/40BE/16B8/5a58c0454f15"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Z">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4dfd/40BE/16B8/5a58c0463cc3"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Is_at_X">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4e3c/40BE/16B8/5a58c06c3b92"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Is_at_Y">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4e4a/40BE/16B8/5a58c073286a"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Is_at_z">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4e50/40BE/16B8/5a58c0752139"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4df1/40BE/16B8/5a58c04469da"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4df8/40BE/16B8/5a58c04549c1"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L3">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4dff/40BE/16B8/5a58c04645e8"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = X; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="X"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4df0/40BE/16B8/5a58c0445f70"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = Y; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Y"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4df7/40BE/16B8/5a58c0455e54"/>
+					</pragmas>
+				</Equation>
+				<!-- _L3 = Z; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L3"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Z"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4dfe/40BE/16B8/5a58c0466c05"/>
+					</pragmas>
+				</Equation>
+				<!-- Is_at_X = _null; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Is_at_X"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4e3d/40BE/16B8/5a58c06c3ebb"/>
+					</pragmas>
+				</Equation>
+				<!-- Is_at_Y = _null; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Is_at_Y"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4e4b/40BE/16B8/5a58c0736237"/>
+					</pragmas>
+				</Equation>
+				<!-- Is_at_z = _null; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Is_at_z"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4e51/40BE/16B8/5a58c075bba"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/4de1/40BE/16B8/5a58c02b1237" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<NetDiagram name="diagram_DronePositionRequest_1" landscape="true" format="A4 (210 297)" oid="!ed/4de2/40BE/16B8/5a58c02b596">
+							<presentationElements>
+								<EquationGE presentable="!ed/4df0/40BE/16B8/5a58c0445f70">
+									<position>
+										<Point x="6482" y="3757"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4df7/40BE/16B8/5a58c0455e54">
+									<position>
+										<Point x="6482" y="4895"/>
+									</position>
+									<size>
+										<Size width="265" height="502"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4dfe/40BE/16B8/5a58c0466c05">
+									<position>
+										<Point x="6615" y="6324"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4e3d/40BE/16B8/5a58c06c3ebb">
+									<position>
+										<Point x="11748" y="3810"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4e4b/40BE/16B8/5a58c0736237">
+									<position>
+										<Point x="11853" y="5080"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4e51/40BE/16B8/5a58c075bba">
+									<position>
+										<Point x="11933" y="6403"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

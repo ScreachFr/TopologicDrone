@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/5" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" name="DroneDirectControl">
+			<inputs>
+				<Variable name="Hovering_done_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4aa8/40BE/16B8/5a58b7882d61"/>
+					</pragmas>
+				</Variable>
+				<Variable name="TakingOff_done_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4aae/40BE/16B8/5a58b7881d68"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Landing_done_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ab4/40BE/16B8/5a58b7883cef"/>
+					</pragmas>
+				</Variable>
+				<Variable name="flying_done_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4aba/40BE/16B8/5a58b78855ec"/>
+					</pragmas>
+				</Variable>
+				<Variable name="EmergencyLanding_done_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ac0/40BE/16B8/5a58b7884d7e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="BatteryAlert_launched_s">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ac6/40BE/16B8/5a58b7885e33"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Roll">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4acc/40BE/16B8/5a58b78877b7"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Roll">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ad2/40BE/16B8/5a58b788331b"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Yaw">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ad8/40BE/16B8/5a58b7885235"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Yaw">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ade/40BE/16B8/5a58b78865cd"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Pitch">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4ae4/40BE/16B8/5a58b788498c"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Pitch">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4aea/40BE/16B8/5a58b78875eb"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_X">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4af0/40BE/16B8/5a58b788797"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_X">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4af6/40BE/16B8/5a58b78818fe"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Y">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4afc/40BE/16B8/5a58b7887605"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Y">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4b02/40BE/16B8/5a58b7881b1e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Z">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4b08/40BE/16B8/5a58b7882826"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Z">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4b0e/40BE/16B8/5a58b78844e1"/>
+					</pragmas>
+				</Variable>
+				<Variable name="G_Altitude">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4b14/40BE/16B8/5a58b78837f1"/>
+					</pragmas>
+				</Variable>
+				<Variable name="L_Altitude">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4b1a/40BE/16B8/5a58b7887289"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<pragmas>
+				<ed:Operator oid="!ed/49f9/40BE/16B8/5a58b712418a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<NetDiagram name="diagram_DroneDirectControl_1" landscape="true" format="A4 (210 297)" oid="!ed/49fa/40BE/16B8/5a58b7125600"/>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
